@@ -1,0 +1,7 @@
+/*
+!.gitignore
+!/src/
+!/target/
+!/output/
+!pom.xml
+!readme.md
