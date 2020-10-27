@@ -2,7 +2,7 @@
 
 1.将程序打包成jar包，并将Shakespeare.txt, punctuation.txt, stop-word-list.txt导入hdfs文件系统下
 
-![img](file:///C:\Users\LUZHON~1\AppData\Local\Temp\ksohtml9064\wps1.jpg) 
+![img](https://github.com/1n5ight/WordCount/blob/main/image_folder/1.jpg) 
 
  
 
@@ -10,7 +10,7 @@
 
 ` hadoop jar wordcount.jar wordcount -Dwordcount.case.sensitive=false /input /output -skip1 /punctuation.txt -skip2 /stop-word-list.txt~ `
 
-![img](file:///C:\Users\LUZHON~1\AppData\Local\Temp\ksohtml9064\wps2.jpg) 
+![img](https://github.com/1n5ight/WordCount/blob/main/image_folder/2.jpg) 
 
 结果输出在/output/part-r-00000中，这是未排序的，所以下一步是排序
 
@@ -20,11 +20,11 @@
 
 `hadoop jar wordcount.jar sort /output/part-r-00000  /output1`
 
-![img](file:///C:\Users\LUZHON~1\AppData\Local\Temp\ksohtml9064\wps3.jpg) 
+![img](https://github.com/1n5ight/WordCount/blob/main/image_folder/3.jpg) 
 
 结果输出在/output1/part-r-00000，如下图
 
-![img](file:///C:\Users\LUZHON~1\AppData\Local\Temp\ksohtml9064\wps4.jpg) 
+![img](https://github.com/1n5ight/WordCount/blob/main/image_folder/4.jpg) 
 
  
 
@@ -32,7 +32,7 @@
 
 4.下图证明是在集群上运行的
 
-![img](file:///C:\Users\LUZHON~1\AppData\Local\Temp\ksohtml9064\wps5.jpg) 
+![img](https://github.com/1n5ight/WordCount/blob/main/image_folder/5.jpg) 
 
 ### 二、设计思路
 
