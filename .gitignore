@@ -1,5 +1,6 @@
 /*
 !.gitignore
+!/image_folder/
 !/src/
 !/target/
 !/output/
